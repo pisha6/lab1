@@ -1,0 +1,37 @@
+@startuml
+class Cat {
+  - name: string
+  - age: int
+  + Cat(name, age)
+  + eat(): void
+  + meow(): void
+  + sleep(): void
+  + play(): void
+  + printInfo(): void
+}
+
+class Sphynx {
+  - bodyTemperature: double
+  - affectionLevel: int
+  + Sphynx(name, age, temp, affection)
+  + findWarmPlace(): void
+  + bathe(): void
+  + meow(): void
+  + play(): void
+  + printInfo(): void
+}
+
+class Persian {
+  - furLength: double
+  - activityMode: string
+  + Persian(name, age, furLength, mode)
+  + practiceShowWalk(): void
+  + grooming(): void
+  + meow(): void
+  + play(): void
+  + printInfo(): void
+}
+
+Cat <|-- Sphynx
+Cat <|-- Persian
+@enduml
