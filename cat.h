@@ -9,7 +9,7 @@ public:
     //конструктор кота
     Cat(std::string name, int age) 
         : name(name), age(age) {}
-    //геттер для доступа к полям
+    //геттеры
     std::string getName() {
         return name;
     };

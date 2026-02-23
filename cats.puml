@@ -3,6 +3,8 @@ class Cat {
   - name: string
   - age: int
   + Cat(name, age)
+  + getName(): string
+  + getAge(): int
   + eat(): void
   + meow(): void
   + sleep(): void
