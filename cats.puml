@@ -7,29 +7,29 @@ class Cat {
   + meow(): void
   + sleep(): void
   + play(): void
-  + printInfo(): void
+  + print_info(): void
 }
 
 class Sphynx {
-  - bodyTemperature: double
-  - affectionLevel: int
-  + Sphynx(name, age, temp, affection)
-  + findWarmPlace(): void
+  - bodytemp: double
+  - lvl: int
+  + Sphynx(name, age, bodytemp, lvl)
+  + find_place(): void
   + bathe(): void
   + meow(): void
   + play(): void
-  + printInfo(): void
+  + print_info(): void
 }
 
 class Persian {
-  - furLength: double
-  - activityMode: string
-  + Persian(name, age, furLength, mode)
-  + practiceShowWalk(): void
+  - fur_len: double
+  - activ: string
+  + Persian(name, age, fur_len, activ)
+  + show_walk(): void
   + grooming(): void
   + meow(): void
   + play(): void
-  + printInfo(): void
+  + print_info(): void
 }
 
 Cat <|-- Sphynx
