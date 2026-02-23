@@ -4,18 +4,18 @@
 
 class Persian : public Cat {
 private:
-    double furLength;
-    std::string activityMode;
+    double fur_len;
+    std::string activ;
 
 public:
-    Persian(std::string name, int age, double furLength, std::string activityMode) 
+    Persian(std::string name, int age, double fur_len, std::string activ) 
         : Cat(name, age) {
-        this->furLength = furLength;
-        this->activityMode = activityMode;
+        this->fur_len = fur_len;
+        this->activ = activ;
         std::cout << "Persian cat " << name << " is created" << std::endl;
     };
 
-    void practiceShowWalk() {
+    void show_walk() {
         std::cout << getName() << " practices show walk, stepping gracefully." << std::endl;
     };
     
@@ -31,9 +31,9 @@ public:
         std::cout << getName() << " plays sedately, without haste." << std::endl;
     }
     
-    void printInfo() override {
+    void print_info() override {
         std::cout << "Name: " << name << ", Age: " << age 
-                  << ", Fur length: " << furLength << " cm"
-                  << ", Activity mode: " << activityMode << std::endl;
+                  << ", Fur length: " << fur_len << " cm"
+                  << ", Activity mode: " << activ << std::endl;
     }
 };

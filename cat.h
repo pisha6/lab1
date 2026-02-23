@@ -32,7 +32,7 @@ public:
         std::cout << name << " is playing with a ball of yarn." << std::endl;
     };
     
-    virtual void printInfo() {
+    virtual void print_info() {
         std::cout << "Name: " << name << ", Age: " << age << " years" << std::endl;
     };   
 };

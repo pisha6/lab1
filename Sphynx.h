@@ -6,19 +6,19 @@ class Sphynx :
 //паблик наследование
 public Cat {
 private:
-    double bodyTemperature;
-    int affectionLevel;
+    double bodytemp;
+    int lvl;
 
 public:
     //конструктор для сфинкса
-    Sphynx(std::string name, int age, double bodyTemperature, int affectionLevel) 
+    Sphynx(std::string name, int age, double bodytemp, int lvl) 
         : Cat(name, age) {
-        this->bodyTemperature = bodyTemperature;//для различ параметров
-        this->affectionLevel = affectionLevel;
+        this->bodytemp = bodytemp;//для различ параметров
+        this->lvl = lvl;
         std::cout << "Sphynx cat " << name << " is created" << std::endl;
     };
     //собств
-    void findWarmPlace() {
+    void find_place() {
         std::cout << getName() << " is looking for a warm place to get warm." << std::endl;
     };
     
@@ -34,9 +34,9 @@ public:
         std::cout << getName() << " is playing but quickly gets cold and looks for warmth." << std::endl;
     }
     
-    void printInfo() override {
+    void print_info() override {
         std::cout << "Name: " << name << ", Age: " << age 
-                  << ", Body temperature: " << bodyTemperature << "C"
-                  << ", Affection level: " << affectionLevel << "/10" << std::endl;
+                  << ", Body temperature: " << bodytemp << " C"
+                  << ", Affection level: " << lvl << "/10" << std::endl;
     }
 };

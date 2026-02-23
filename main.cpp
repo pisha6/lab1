@@ -15,8 +15,8 @@ int main() {
     sphynx->meow();
     sphynx->sleep();
     sphynx->play();
-    sphynx->printInfo();
-    sphynx->findWarmPlace();
+    sphynx->print_info();
+    sphynx->find_place();
     sphynx->bathe();
 
     std::cout << "\nPERSIAN\n" << std::endl;
@@ -25,8 +25,8 @@ int main() {
     persian->meow();
     persian->sleep();
     persian->play();
-    persian->printInfo();
-    persian->practiceShowWalk();
+    persian->print_info();
+    persian->show_walk();
     persian->grooming();
 
     std::cout << "\npolymorphism\n" << std::endl;
@@ -37,7 +37,7 @@ int main() {
         std::cout << "\nCat " << i+1 << " (" << cats[i]->getName() << "):" << std::endl;
         cats[i]->meow();
         cats[i]->play();
-        cats[i]->printInfo();
+        cats[i]->print_info();
     }
 
     delete sphynx;
