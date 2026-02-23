@@ -5,12 +5,10 @@
 
 int main() {
     std::cout << "\nCats\n" << std::endl;
-
     Sphynx* sphynx = new Sphynx("Sphynx1", 3, 38.5, 9);
     Persian* persian = new Persian("Persian1", 5, 12.5, "low");
     
     std::cout << "\nSPHYNX\n" << std::endl;
-
     sphynx->eat();
     sphynx->meow();
     sphynx->sleep();
@@ -20,7 +18,6 @@ int main() {
     sphynx->bathe();
 
     std::cout << "\nPERSIAN\n" << std::endl;
-
     persian->eat();
     persian->meow();
     persian->sleep();
@@ -30,9 +27,7 @@ int main() {
     persian->grooming();
 
     std::cout << "\npolymorphism\n" << std::endl;
-
     Cat* cats[3] = {sphynx, persian, new Persian("Persian2", 2, 10.0, "medium")};
-    
     for (int i = 0; i < 3; i++) {
         std::cout << "\nCat " << i+1 << " (" << cats[i]->getName() << "):" << std::endl;
         cats[i]->meow();

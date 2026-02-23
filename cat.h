@@ -13,25 +13,20 @@ public:
     std::string getName() {
         return name;
     };
-
     int getAge() { return age; };
     //для переопределения в дочерних virtual
     virtual void eat() {
         std::cout << name << " is eating." << std::endl;
     };
-    
     virtual void meow() {
-        std::cout << name << " meows: Meow-meow!" << std::endl;
+        std::cout << name << " meows: Meow-meow." << std::endl;
     };
-    
     virtual void sleep() {
         std::cout << name << " is sleeping." << std::endl;
     };
-    
     virtual void play() {
         std::cout << name << " is playing with a ball of yarn." << std::endl;
     };
-    
     virtual void print_info() {
         std::cout << "Name: " << name << ", Age: " << age << " years" << std::endl;
     };   
