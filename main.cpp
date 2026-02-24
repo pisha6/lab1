@@ -5,6 +5,7 @@
 
 int main() {
     std::cout << "\nCats\n" << std::endl;
+    //Cat* cat = new Cat("asdsd",2); нельзя
     Sphynx* sphynx = new Sphynx("Sphynx1", 3, 38.5, 9);
     Persian* persian = new Persian("Persian1", 5, 12.5, "low");
     Persian* persian2 = new Persian("Persian1", 5, 12.5, "low", 3);

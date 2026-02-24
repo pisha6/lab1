@@ -14,12 +14,11 @@ public:
         return name;
     };
     int getAge() { return age; };
+
+    virtual void meow() = 0;  
     //для переопределения в дочерних virtual
     virtual void eat() {
         std::cout << name << " is eating." << std::endl;
-    };
-    virtual void meow() {
-        std::cout << name << " meows: Meow-meow." << std::endl;
     };
     virtual void sleep() {
         std::cout << name << " is sleeping." << std::endl;
