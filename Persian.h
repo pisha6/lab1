@@ -16,19 +16,23 @@ public:
     };
     void show_walk() {
         std::cout << getName() << " practices show walk, stepping gracefully." << std::endl;
+        //практикует выставочную походку, грациозно ступая
     };
     void grooming() {
-        std::cout << getName() << " is at grooming - brushing its long fur." << std::endl;
+        std::cout << getName() << " is at grooming." << std::endl;
+        //на груминге.
     };
     void meow() override {
         std::cout << getName() << " meows gently and melodiously: meow..." << std::endl;
+        //мяукает нежно и мелодично: мяу
     }
     void play() override {
-        std::cout << getName() << " plays sedately, without haste." << std::endl;
+        std::cout << getName() << " plays slowly, without haste." << std::endl;
+        //играет медлеенно, без спешки
     }
     void print_info() override {
         std::cout << "Name: " << name << ", Age: " << age 
                   << ", Fur length: " << fur_len << " cm"
                   << ", Activity mode: " << activ << std::endl;
-    }
+    }//имя, возраст, длина шерсти, режим активности
 };
