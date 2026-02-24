@@ -7,11 +7,27 @@ public Cat {
 private:
     double fur_len;
     std::string activ;
+    int a = 0;
+    std::string s;
 public:
     Persian(std::string name, int age, double fur_len, std::string activ) 
         : Cat(name, age) {
         this->fur_len = fur_len;
         this->activ = activ;
+        std::cout << "Persian cat " << name << " is created" << std::endl;
+    };
+    Persian(std::string name, int age, double fur_len, std::string activ, int a) 
+        : Cat(name, age) {
+        this->fur_len = fur_len;
+        this->activ = activ;
+        this->a = a;
+        std::cout << "Persian cat " << name << " is created" << std::endl;
+    };
+    Persian(std::string name, int age, double fur_len, std::string activ, std::string s) 
+        : Cat(name, age) {
+        this->fur_len = fur_len;
+        this->activ = activ;
+        this->s = s;
         std::cout << "Persian cat " << name << " is created" << std::endl;
     };
     void show_walk() {
@@ -20,7 +36,7 @@ public:
     };
     void grooming() {
         std::cout << getName() << " is at grooming." << std::endl;
-        //на груминге.
+        //на груминге
     };
     void meow() override {
         std::cout << getName() << " meows gently and melodiously: meow..." << std::endl;

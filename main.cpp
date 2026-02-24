@@ -7,6 +7,11 @@ int main() {
     std::cout << "\nCats\n" << std::endl;
     Sphynx* sphynx = new Sphynx("Sphynx1", 3, 38.5, 9);
     Persian* persian = new Persian("Persian1", 5, 12.5, "low");
+    Persian* persian2 = new Persian("Persian1", 5, 12.5, "low", 3);
+    Persian* persian3 = new Persian("Persian1", 5, 12.5, "low", "asasa");
+
+    Cat* cat[4] = {sphynx, persian, persian2, persian3};
+    static_cast<Persian*>(cat[2])-> show_walk();
     
     std::cout << "\nSPHYNX\n" << std::endl;
     sphynx->eat();
@@ -26,16 +31,7 @@ int main() {
     persian->show_walk();
     persian->grooming();
 
-    std::cout << "\npolymorphism\n" << std::endl;
-    Cat* cats[3] = {sphynx, persian, new Persian("Persian2", 2, 10.0, "medium")};
-    for (int i = 0; i < 3; i++) {
-        std::cout << "\nCat " << i+1 << " (" << cats[i]->getName() << "):" << std::endl;
-        cats[i]->meow();
-        cats[i]->play();
-        cats[i]->print_info();
-    }
 
     delete sphynx;
     delete persian;
-    delete cats[2];
 }

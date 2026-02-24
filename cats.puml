@@ -26,7 +26,11 @@ class Sphynx {
 class Persian {
   - fur_len: double
   - activ: string
+  - a: int
+  - s: string
   + Persian(name, age, fur_len, activ)
+  + Persian(name, age, fur_len, activ, a) 
+  + Persian(name, int age, fur_len, activ, s) 
   + show_walk(): void
   + grooming(): void
   + meow(): void
